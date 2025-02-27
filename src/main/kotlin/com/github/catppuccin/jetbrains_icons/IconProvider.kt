@@ -23,7 +23,7 @@ class IconProvider : IconProvider() {
   private val iconOverrides = mapOf("dockerfile" to icons.docker)
 
   /** File extensions that are handled by more specific providers (not this class). */
-  private val fileTypesByProviders = listOf(".java")
+  private val fileTypesByProviders = listOf()
 
   /**
    * Returns an icon for the given [PsiElement].

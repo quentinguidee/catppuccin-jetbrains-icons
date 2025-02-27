@@ -19,7 +19,7 @@ class PluginSettings : Configurable {
     val state = PluginSettingsState.instance
     return packChanged() ||
       component.additionalSupport.python.isSelected != state.pythonSupport ||
-      component.additionalSupport.java.isSelected != state.javaSupport ||
+      component.additionalSupport.nodes.isSelected != state.nodesSupport ||
       component.additionalSupport.go.isSelected != state.goSupport
   }
 
@@ -27,7 +27,7 @@ class PluginSettings : Configurable {
     val state = PluginSettingsState.instance
 
     state.pythonSupport = component.additionalSupport.python.isSelected
-    state.javaSupport = component.additionalSupport.java.isSelected
+    state.nodesSupport = component.additionalSupport.nodes.isSelected
     state.goSupport = component.additionalSupport.go.isSelected
 
     if (packChanged()) {

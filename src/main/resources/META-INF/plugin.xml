@@ -33,7 +33,6 @@ For further help, see also:
   <depends>com.intellij.modules.platform</depends>
   <depends optional="true" config-file="com.github.catppuccin.jetbrains_icons-withKotlin.xml">org.jetbrains.kotlin
   </depends>
-  <depends optional="true" config-file="com.github.catppuccin.jetbrains_icons-withJava.xml">com.intellij.java</depends>
   <extensions defaultExtensionNs="com.intellij">
     <iconProvider
       implementation="com.github.catppuccin.jetbrains_icons.IconProvider"
